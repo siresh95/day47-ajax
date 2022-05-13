@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Ajax Services And Promises</title>
+    <style>
+        body {
+            margin: auto
+        }
+        
+        div {
+            border: 1px solid black;
+            background-color: lightblue;
+            padding: 50px;
+            width: 80%;
+            font-size: xx-large;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="./http_services.js"></script>
+</head>
+
+<body>
+    <h1> The Test Services Result</h1>
+    <div id="get_services"></div>
+    <div id="delete_services"></div>
+    <div id="post_services"></div>
+
+    <script>
+        const getElem = document.querySelector('#get_services');
+        const getUrl = "http://localhost:3000/employees/1";
+        makePromiseCall("GET", getUrl, true)
+            .then(response => getElem.textContent = "Get User Data :" + response)
+            .catch(error => getElem.textContent = "Get Error Status :" + JSON.stringify(error))
+
+        const deleteElem = document.querySelector('#delete_services');
+        const deleteUrl = "http://localhost:3000/employees/13";
+        makePromiseCall("DELETE", deleteUrl, false)
+            .then(response => deleteElem.textContent = "Delete data :" + response)
+            .catch(error => deleteElem.textContent = "Delete Error Status :" + JSON.stringify(error))
+
+        const postElem = document.querySelector('#post_services')
+        const postUrl = "http://localhost:3000/employees";
+        const empData = {
+            "_name": "Julekha",
+            "_gender": "Female",
+            "_department": [
+                "Engineering",
+                "HR"
+            ],
+            "_salary": "400000",
+            "_startDate": "16 Nov 2021",
+            "_note": "Full stack developer",
+            "_profilePic": "../assets/profile-images/Ellipse -5.png"
+        };
+        makePromiseCall("POST", postUrl, true, empData)
+            .then(response => postElem.textContent = "New Data Added :" + response)
+            .catch(error => postElem.textContent = "Post Error Status :" + JSON.stringify(error))
+    </script>
+</body>
+
+</html>

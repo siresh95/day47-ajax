@@ -1,0 +1,129 @@
+{
+    "employees": [{
+            "id": 1,
+            "_name": "Markkks",
+            "_gender": "male",
+            "_department": [
+                "Engineering"
+            ],
+            "_salary": "500000",
+            "_startDate": "29 Oct 2019",
+            "_note": "Terrific Engineer",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png"
+        },
+        {
+            "id": 2,
+            "_name": "Bill",
+            "_gender": "male",
+            "_department": [
+                "Engineering"
+            ],
+            "_salary": "500000",
+            "_startDate": "29 Oct 2019",
+            "_note": "Terrific Engineer",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png"
+        },
+        {
+            "_name": "Kavya",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 5
+        },
+        {
+            "_name": "Divya",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 6
+        },
+        {},
+        {
+            "_name": "Julekha",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 7
+        },
+        {
+            "name": "Newdata",
+            "salary": "5000",
+            "id": 8
+        },
+        {
+            "_name": "Demo",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 9
+        },
+        {
+            "_name": "Demo",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 10
+        },
+        {
+            "_name": "Demo123",
+            "_profilePic": "../assets/profile-images/Ellipse -1.png",
+            "_gender": "female",
+            "_department": [
+                "Finance",
+                "Engineer"
+            ],
+            "_salary": "428100",
+            "_note": "                ",
+            "_startDate": 1621189800000,
+            "id": 11
+        },
+        {
+            "name": "Harry",
+            "salary": "5000",
+            "id": 12
+        },
+        {
+            "_name": "Julekha",
+            "_gender": "Female",
+            "_department": [
+                "Engineering",
+                "HR"
+            ],
+            "_salary": "400000",
+            "_startDate": "16 Nov 2021",
+            "_note": "Full stack developer",
+            "_profilePic": "../assets/profile-images/Ellipse -5.png",
+            "id": 13
+        }
+    ]
+}
